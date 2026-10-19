@@ -1,1 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SelectedCV - Privacy Policy</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf3 100%);
+  min-height: 100vh;
+  padding: 24px 16px;
+  color: #1f2937;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(26, 115, 232, 0.08), 0 4px 12px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+.header {
+  background: linear-gradient(135deg, #1a73e8 0%, #4A90E2 50%, #5B9BD5 100%);
+  padding: 48px 32px 40px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.header-icon {
+  width: 72px;
+  height: 72px;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.header-icon svg { width: 38px; height: 38px; fill: #ffffff; }
+.header h1 { font-size: 28px; font-weight: 800; color: #ffffff; margin-bottom: 8px; }
+.header p { font-size: 14px; color: rgba(255, 255, 255, 0.9); }
+.updated-badge {
+  display: inline-flex; align-items: center; gap: 6px; background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25); padding: 6px 14px; border-radius: 20px;
+  margin-top: 18px; font-size: 12px; color: #ffffff; font-weight: 500;
+}
+.content { padding: 40px 32px 16px; }
+.intro-box {
+  background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+  border-left: 4px solid #1a73e8;
+  border-radius: 12px;
+  padding: 20px 22px;
+  margin-bottom: 32px;
+}
+.intro-box p { font-size: 14.5px; color: #1e40af; margin: 0; line-height: 1.65; }
+.section { margin-bottom: 32px; padding-bottom: 4px; }
+.section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.section-number {
+  width: 34px; height: 34px; background: linear-gradient(135deg, #1a73e8 0%, #4A90E2 100%);
+  color: #ffffff; border-radius: 10px; display: flex; align-items: center;
+  justify-content: center; font-size: 14px; font-weight: 700; flex-shrink: 0;
+}
+.section-header h2 { font-size: 19px; font-weight: 700; color: #111827; }
+.section p { font-size: 14.5px; color: #4b5563; margin-bottom: 12px; line-height: 1.7; }
+.highlight-box { background: #f0fdf4; border-left: 4px solid #10b981; border-radius: 12px; padding: 18px 22px; margin: 16px 0; }
+.highlight-box p { color: #065f46; font-size: 14px; font-weight: 500; margin: 0; }
+.info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 16px 0; }
+.info-card { background: #f9fafb; border: 1px solid #e5e7eb; border-radius: 12px; padding: 16px; }
+.info-card-title { font-size: 13px; font-weight: 700; color: #1a73e8; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.info-card-title svg { width: 16px; height: 16px; fill: #1a73e8; }
+.info-card-text { font-size: 13px; color: #4b5563; line-height: 1.6; margin: 0; }
+ul.check-list { list-style: none; margin: 12px 0; padding: 0; }
+ul.check-list li { position: relative; padding-left: 28px; margin-bottom: 10px; font-size: 14px; color: #4b5563; line-height: 1.6; }
+ul.check-list li::before { content: ''; position: absolute; left: 0; top: 6px; width: 16px; height: 16px; background: #dbeafe; border-radius: 50%; }
+ul.check-list li::after { content: ''; position: absolute; left: 5px; top: 11px; width: 6px; height: 3px; border-left: 2px solid #1a73e8; border-bottom: 2px solid #1a73e8; transform: rotate(-45deg); }
+.contact-box { background: linear-gradient(135deg, #1a73e8 0%, #4A90E2 100%); border-radius: 16px; padding: 28px 24px; text-align: center; margin: 32px 0; }
+.contact-box h3 { color: #ffffff; font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+.contact-box p { color: rgba(255, 255, 255, 0.9); font-size: 13.5px; margin-bottom: 14px; }
+.contact-box a { display: inline-flex; align-items: center; gap: 8px; background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255, 255, 255, 0.3); color: #ffffff; padding: 12px 24px; border-radius: 12px; text-decoration: none; font-size: 14px; font-weight: 600; }
+.footer { background: #f9fafb; padding: 24px 32px; text-align: center; border-top: 1px solid #e5e7eb; }
+.footer p { font-size: 12.5px; color: #6b7280; margin-bottom: 4px; }
+.footer .brand { font-weight: 700; color: #1a73e8; }
+@media (max-width: 640px) {
+  body { padding: 12px 8px; }
+  .header { padding: 36px 20px 32px; }
+  .header h1 { font-size: 22px; }
+  .content { padding: 28px 20px 12px; }
+  .section-header h2 { font-size: 17px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
 
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-icon">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+      </svg>
+    </div>
+    <h1>SelectedCV Privacy Policy</h1>
+    <p>Your privacy is our priority</p>
+    <div class="updated-badge">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="white">
+        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4.2 14.2L11 13V7h1.5v5.2l4.5 2.7-.8 1.3z"/>
+      </svg>
+      Last Updated: October 2026
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- INTRO -->
+    <div class="intro-box">
+      <p>
+        Welcome to <strong>SelectedCV</strong> — a professional CV maker designed with your privacy in mind. 
+        This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application.
+      </p>
+    </div>
+
+    <!-- 1. INFORMATION WE COLLECT -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">1</div>
+        <h2>Information We Collect</h2>
+      </div>
+      <p>
+        SelectedCV is built as an <strong>offline-first application</strong>. Most of your CV data is stored locally on your device. However, to provide certain features, we use trusted third-party services.
+      </p>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-card-title">
+            <svg viewBox="0 0 24 24"><path d="M12 12c2.2 0 4-1.8 4-4s-1.8-4-4-4-4 1.8-4 4 1.8 4 4 4zm0 2c-2.7 0-8 1.3-8 4v2h16v-2c0-2.7-5.3-4-8-4z"/></svg>
+            CV & Personal Data
+          </div>
+          <p class="info-card-text">
+            Your name, education, work experience, and photos are stored <strong>locally on your device</strong> using secure databases.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-title">
+            <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            Device & Usage Data
+          </div>
+          <p class="info-card-text">
+            Collected by Google AdMob and Firebase for ads, crash reporting, and app functionality (e.g., Advertising ID).
+          </p>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-title">
+            <svg viewBox="0 0 24 24"><path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z"/><path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg>
+            Voice Input Data
+          </div>
+          <p class="info-card-text">
+            When using Voice Input, audio is processed by your device's speech recognition service. We do not store your voice.
+          </p>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <p>🔒 We do <strong>NOT</strong> sell, rent, or share your personal CV content to any third parties.</p>
+      </div>
+    </div>
+
+    <!-- 2. HOW WE USE YOUR INFORMATION -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">2</div>
+        <h2>How We Use Your Information</h2>
+      </div>
+      <p>The data we collect is used strictly for the following purposes:</p>
+      <ul class="check-list">
+        <li>To display relevant advertisements through Google AdMob</li>
+        <li>To process in-app purchases (e.g., "Remove Ads") via Google Play Billing</li>
+        <li>To authenticate users and verify purchases securely using Firebase</li>
+        <li>To improve app performance, fix bugs, and prevent crashes</li>
+        <li>To enable voice-to-text features using your device's microphone</li>
+      </ul>
+    </div>
+
+    <!-- 3. THIRD-PARTY SERVICES -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">3</div>
+        <h2>Third-Party Services</h2>
+      </div>
+      <p>SelectedCV integrates the following trusted third-party services, which may collect data according to their own privacy policies:</p>
+      <ul class="check-list">
+        <li><strong>Google AdMob</strong> — for displaying advertisements</li>
+        <li><strong>Google Play Billing</strong> — for secure in-app purchases</li>
+        <li><strong>Firebase (Google)</strong> — for secure purchase verification, backend functions, and crash analytics</li>
+        <li><strong>Google Speech Recognition</strong> — for voice-to-text input</li>
+      </ul>
+      <p>You can review Google's Privacy Policy here: 
+        <a href="https://policies.google.com/privacy" target="_blank" style="color:#1a73e8;font-weight:600;">https://policies.google.com/privacy</a>.
+      </p>
+    </div>
+
+    <!-- 4. PERMISSIONS -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">4</div>
+        <h2>Permissions We Request</h2>
+      </div>
+      <p>To provide you with the best experience, SelectedCV requests the following permissions:</p>
+      <ul class="check-list">
+        <li><strong>Storage (Files & Media)</strong> — to save and export your CV as a PDF file.</li>
+        <li><strong>Camera & Photos</strong> — to add a profile picture to your CV.</li>
+        <li><strong>Microphone</strong> — to allow voice dictation for faster CV creation.</li>
+        <li><strong>Internet</strong> — to load ads and process secure in-app purchases.</li>
+      </ul>
+      <p>All permissions are optional and can be disabled in your device settings without affecting offline features.</p>
+    </div>
+
+    <!-- 5. DATA SECURITY & RETENTION -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">5</div>
+        <h2>Data Security & Retention</h2>
+      </div>
+      <p>
+        Your CV data is stored locally using <strong>Hive database</strong>, protected by your device's built-in security. 
+        Any data transmitted to third parties (like Firebase or Google Play) is sent over secure <strong>HTTPS encrypted connections</strong>.
+      </p>
+      <p>
+        We retain purchase verification data only as long as necessary to provide you with premium features. You can request data deletion by contacting us.
+      </p>
+    </div>
+
+    <!-- 6. YOUR RIGHTS & DATA DELETION -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">6</div>
+        <h2>Your Rights & Data Deletion</h2>
+      </div>
+      <p>You have full control over your data:</p>
+      <ul class="check-list">
+        <li>Delete individual CVs directly within the app.</li>
+        <li>Uninstall the app to remove all locally stored data immediately.</li>
+        <li>Manage ad personalization via your Google Account settings.</li>
+        <li><strong>Request Account/Data Deletion:</strong> If you have made an in-app purchase or logged in, you can email us at <strong>cvbhayya@gmail.com</strong> to request deletion of your purchase/authentication data from our Firebase servers.</li>
+      </ul>
+    </div>
+
+    <!-- 7. CHILDREN'S PRIVACY -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">7</div>
+        <h2>Children's Privacy</h2>
+      </div>
+      <p>
+        SelectedCV is not intended for users under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us immediately.
+      </p>
+    </div>
+
+    <!-- 8. CHANGES TO THIS POLICY -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-number">8</div>
+        <h2>Changes to This Privacy Policy</h2>
+      </div>
+      <p>
+        We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated "Last Updated" date. Your continued use of the app constitutes acceptance of the updated policy.
+      </p>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="contact-box">
+      <h3>Questions or Concerns?</h3>
+      <p>We're here to help. Reach out to us anytime.</p>
+      <a href="mailto:cvbhayya@gmail.com">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+        </svg>
+        cvbhayya@gmail.com
+      </a>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p>© 2026 <span class="brand">SelectedCV</span> — Developed by DPRS Developers</p>
+    <p>All rights reserved. Made with ❤️ in India.</p>
+  </div>
+
+</div>
+</body>
+</html>
